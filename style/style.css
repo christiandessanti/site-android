@@ -30,20 +30,58 @@ body {
 }
 
 header{
-    background-color: var(--cor4);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
 }
 
 header > h1{
     color: white;
     font-family: var(--fonte-destaque);
+    margin-top: 20px;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 header > p{
     color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 nav{
     background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.363);
+}
+
+/* inserção além do curso, para ficar lateralizado os itens do menu*/
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
 }
 
 main{
@@ -80,4 +118,6 @@ main img.pequena{
 footer{
     background-color: var(--cor5);
     color: white;
+    padding: 10px;
+    text-align: center;
 }
